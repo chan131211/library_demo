@@ -46,7 +46,7 @@ if ($method == 'POST') {
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand hidden-sm" href="index.php">小白网</a>
+            <h4 style="color: #D3D3D3">小白网</h4>
         </div>
     </div>
 </div>
@@ -93,7 +93,7 @@ if ($method == 'POST') {
         </ul>
     </div>
 </footer>
-<script src="style/js/jquery.min.js"></script>
+<script src="style/js/jquery-3.4.1.min.js"></script>
 <script src="style/js/bootstrap.min.js"></script>
 </body>
 

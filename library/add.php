@@ -1,7 +1,5 @@
 <?php
-require 'auth.php';
-
-print_r($_FILES);
+require_once 'auth.php';
 ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -85,15 +83,9 @@ print_r($_FILES);
                   </div>
               </div>
               <div class="form-group">
-                    <label class="col-sm-2 control-label">封面:</label>
-                    <div class="col-sm-10">
-                        <input type="file" name="bookImage">
-                    </div>
-                </div>
-              <div class="form-group">
                   <label class="col-sm-2 control-label">简介:</label>
                   <div class="col-sm-10">
-                    <textarea class="form-control" name="bookInfo" rows="2"  placeholder="不超过50字"></textarea>
+                    <textarea class="form-control" name="bookInfo" rows="2"  placeholder="请输入图书简介"></textarea>
                       <label class="error" style="color: #ff0000;display: none;">*请输入合法的图书简介</label>
                   </div>
               </div>
@@ -114,7 +106,7 @@ print_r($_FILES);
             </ul>
         </div>
     </footer>
-    <script src="style/js/jquery.min.js"></script>
+    <script src="style/js/jquery-3.4.1.min.js"></script>
     <script src="style/js/bootstrap.min.js"></script>
     <script>
         function post(obj) {
@@ -130,6 +122,7 @@ print_r($_FILES);
                     }
                 }else {
                     alert('添加成功');
+                    window.location.replace("index.php");
                 }
             }, 'json');
             return false;
